@@ -1,0 +1,181 @@
+.main-nav{
+	position:relative;
+
+}
+
+.main-nav__menu li a:hover{
+	opacity:0.6;
+}
+
+.main-nav__menu li a:active{
+	opacity:0.3;
+}
+
+
+.main-mav-button-hidden{
+	display:none;
+}
+
+
+.main-nav__menu{
+	display:none;
+}
+
+.main-nav--nojs{
+	display:block;
+}
+
+.main-nav-hidden{
+	display:none;
+}
+
+.main-nav-show{
+	display:block;
+}
+
+.main-nav__open{
+		position:absolute;
+	top:-44px;
+	right:22px;
+}
+
+.main-nav__open:hover,
+.main-nav__close:hover{
+	opacity:0.6;
+	transition-duration:0.6s;
+	transition-property:opacity;
+}
+
+.main-nav__close{
+	position:absolute;
+	top:-44px;
+	right:22px;
+
+}
+.main-nav__menu{
+	.reset-list();
+}
+
+.main-nav li{
+	width:100%;
+	display:flex;
+	border-bottom:2px solid #e6e6e6;
+}
+
+.main-nav li a{
+	font-family:Oswald;
+	font-weight:500;
+	font-size:20px;
+	line-height:20px;
+	color:black;
+	text-transform:uppercase;
+	text-decoration:none;
+	padding:24px 0;
+	text-align:center;
+	margin:0 auto;
+}
+
+.main-nav li a:hover{
+	transition-duration:0.6s;
+	transition-property:opacity;
+}
+
+@media(min-width:@tablet-width){
+.main-nav__open, main-nav__close{
+	display:none;
+}
+.main-nav{
+	display:flex;
+	margin:7px;
+}
+
+.main-nav__menu{
+	display:flex;
+	margin-left:90px;
+	margin-top:22px;
+}
+
+.main-nav li{
+	width:auto;
+	border:none;
+
+
+}
+
+
+.main-nav li:not(:last-child){
+	margin-right:22px;
+
+}
+
+.main-nav__menu--current{
+	border-bottom:2px solid #68b738;
+}
+
+.main-nav li{
+	display:inline-block;
+}
+
+.main-nav li a{
+	font-weight:400;
+	font-size:18px;
+	line-height:24px;
+	color:black;
+	padding:5px 0;
+	margin:0;
+	}
+
+	
+}
+
+
+@media(min-width:@desktop-width){
+
+.main-nav{
+	margin:7px;
+	margin-left:500px;
+}
+
+.main-nav__menu{
+	display:flex;
+	margin-left:90px;
+	margin-top:22px;
+}
+
+.main-nav li{
+	width:auto;
+	border:none;
+
+
+}
+
+
+.main-nav li:not(:last-child){
+	margin-right:22px;
+
+}
+
+.main-nav__menu--current{
+	border-bottom:2px solid white;
+}
+
+.inner-page .main-nav__menu--current{
+	border-bottom:2px solid #68b738;
+}
+
+.main-nav li{
+	display:inline-block;
+}
+
+.main-nav li a{
+	font-weight:400;
+	font-size:18px;
+	line-height:24px;
+	color:black;
+	padding:5px 0;
+	margin:0;
+
+	}
+
+}
+
